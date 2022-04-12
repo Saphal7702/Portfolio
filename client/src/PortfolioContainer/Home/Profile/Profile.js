@@ -1,6 +1,5 @@
 import React from "react";
 import Typical from "react-typical";
-// import ScrollService from "../../../utilities/ScrollService";
 import "./Profile.css";
 
 export default function Profile() {
@@ -10,7 +9,7 @@ export default function Profile() {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a href="www.linkedin.com/in/saphal-karki-2a4114203">
+              <a href="https://www.linkedin.com/in/saphal-karki-2a4114203/">
                 <i className="fa fa-linkedin-square" />
               </a>
               <a href="https://github.com/Saphal7702">
@@ -25,7 +24,6 @@ export default function Profile() {
               <a href="#">
                 <i className="fa fa-instagram" />
               </a>
-
             </div>
           </div>
           <div className="profile-details-name">
@@ -41,13 +39,13 @@ export default function Profile() {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "Computer Science Graduate 👨‍💻",
+                    "Computer Science Graduate 🎓",
                     1000,
-                    "Enthusiastic Dev 😎",
+                    "Software Developer 📈",
                     1000,
                     "Full stack Developer 💻",
                     1000,
-                    "React/React Native 🌐",
+                    "Engineer 🔨",
                     1000,
                   ]}
                 />
@@ -59,11 +57,8 @@ export default function Profile() {
           </div>
 
           <div className="profile-options">
-            {/* <button className="btn primary-btn"
-            onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
-            > Hire Me </button> */}
-            <a href="saphal.pdf" download="Resume_Saphal.pdf">
-              <button className="btn highlighted-btn">Get Resume</button>
+            <a href="saphal.pdf">
+              <button className="btn highlighted-btn">View Resume</button>
             </a>
           </div>
         </div>

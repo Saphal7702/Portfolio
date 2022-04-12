@@ -1,0 +1,101 @@
+.about-me-container {
+  background-image: url("../../assets/Home/bg.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+.about-me-parent {
+  max-width: 1000px;
+  width: 70%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-bottom: 50px;
+  gap: 20px;
+}
+.cards .card {
+  width: 100%;
+  height: 350px;
+  background: white;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 3px 4px grey;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.card img {
+  margin-left: 5%;
+  width: 90%;
+  height: 85%;
+  margin-top: 2%;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+.card:hover img {
+  transform: scale(1.05);
+}
+.project-par {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.hidden-open-btn {
+  visibility: hidden;
+  padding: 1em;
+  background-color: rgba(200, 200, 200, 0.4);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  align-items: center;
+  text-align: center;
+}
+.hidden-open-btn button {
+  position: inherit;
+  top: 40%;
+  left: 40%;
+  padding: 20px;
+  border-radius: 40%;
+  border: 1px solid var(--orange);
+}
+.hidden-open-btn button a {
+  color: var(--orange);
+  font-size: 1.3em;
+  font-weight: bold;
+  text-decoration: none;
+}
+.card:hover .hidden-open-btn {
+  visibility: visible;
+}
+
+@media only screen and (max-width: 1110px) {
+  .about-me-parent {
+    width: 88%;
+  }
+}
+@media only screen and (max-width: 898px) {
+  .about-me-profile {
+    display: none;
+  }
+  .about-me-details {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 466px) {
+  .about-me-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me-options .highlighted-btn {
+    margin: 24px 0 0 0 !important;
+  }
+  .about-me-options button {
+    width: 100%;
+  }
+}

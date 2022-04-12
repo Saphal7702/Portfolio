@@ -6,7 +6,6 @@ sgMail.setApiKey(process.env.MAIL_API);
 
 router.post("/contact", (req, res) => {
   let data = req.body;
-  console.log(data);
   if (
     data.name.length === 0 ||
     data.email.length === 0 ||

@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "proxy": "https://glacial-coast-74659.herokuapp.com",
+  "proxy": "https://saphalportfolio.herokuapp.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
